@@ -1,21 +1,32 @@
 @charset "UTF-8";
 
+:root {
+    --cor0:#133B40;
+    --cor1:#15403B;
+    --cor2:#537073;
+    --cor3:#AABFBF;
+    --cor4:#F2F2F2;
+}
 * {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 body, html {
     text-align: center;
-    background-color: lightgreen;
+    background-color: var(--cor2);
 }
 body {
     margin: 0;
+    position: relative;
+    text-align: center;
+    justify-content: center;
 }
 header {
-    background-color: darkgreen;
+    background-color: var(--cor4);
     margin: 0px;
-    padding: 10px;
-    width: auto;
+    padding: 10px 0;
+    width: 100%;
+
 }
 header > div {
     display: inline-flex;
@@ -28,30 +39,58 @@ header > div > section {
     padding: 10px;
 }
 header > div > section > h1 {
-    color: white;
+    color: var(--cor0);
     font-size: 2em;
     font-variant: small-caps;
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.744);
+    text-shadow: 1px 1px 1px var(--cor0);
     text-align: center;
 }
 nav {
     margin: auto;
 }
-a {
+nav > a {
     text-decoration: none;
-    color: white;
-    padding: 3px;
-    background-color: darkgreen;
+    color: var(--cor0);
+    background-color: var(--cor4);
     border-radius: 5px;
+    margin: 7px;
+    padding: 2px;
+    line-height: 1.3em;
 }
-a:hover {
+nqv > a:hover {
     font-weight: bold;
-    background-color: rgb(0, 69, 0);
+    background-color: var(--cor3);
 }
-main {
-    margin: auto;
+
+main > section {
+    margin: 10px auto 10px auto;
     padding: 20px;
     max-width: 800px;
     width: auto;
-    background-color: white;
+    background-color: var(--cor1);
+    color: var(--cor4);
+    border-radius: 15px;
+}
+main {
+    text-align: center;
+    margin: 0 20px;
+    justify-content: center;
+}
+h2 {
+    font-size: 1.3em;
+}
+p {
+    font-size: .8em;
+}
+main a {
+    text-decoration: none;
+    color: var(--cor4);
+}
+main a:hover {
+    text-decoration: underline;
+}
+iframe {
+    width: 300px;
+    height: 200px;
+    background-color: #15403B;
 }
