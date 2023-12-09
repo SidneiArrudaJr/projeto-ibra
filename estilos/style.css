@@ -20,13 +20,18 @@ body {
     position: relative;
     text-align: center;
     justify-content: center;
+    position: relative;
 }
 header {
     background-color: var(--cor4);
     margin: 0px;
     padding: 10px 0;
     width: 100%;
-
+    position: fixed;
+    top: 0;
+}
+#ibra {
+    font-size: 1.5em;
 }
 header > div {
     display: inline-flex;
@@ -57,7 +62,7 @@ nav > a {
     padding: 2px;
     line-height: 1.3em;
 }
-nqv > a:hover {
+nav > a:hover {
     font-weight: bold;
     background-color: var(--cor3);
 }
@@ -75,6 +80,7 @@ main {
     text-align: center;
     margin: 0 20px;
     justify-content: center;
+    margin-top: 200px;
 }
 h2 {
     font-size: 1.3em;
@@ -85,6 +91,7 @@ p {
 main a {
     text-decoration: none;
     color: var(--cor4);
+    padding: 0 10px;
 }
 main a:hover {
     text-decoration: underline;
@@ -93,4 +100,28 @@ iframe {
     width: 300px;
     height: 200px;
     background-color: #15403B;
+}
+
+@media screen and (max-width: 426px) {
+    iframe {
+        width: 240px;
+        height: 160px;
+    }
+    main {
+        margin-top: 210px;
+    }
+}
+
+@media  screen and (min-width: 600px) and (max-width: 799px) {
+    iframe {
+        width: 500px;
+        height: 333px;
+    }
+}
+
+@media  screen and (min-width: 800px) {
+    iframe {
+        width: 700px;
+        height: 466px;
+    }
 }
