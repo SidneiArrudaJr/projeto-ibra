@@ -26,11 +26,12 @@ header , footer {
     background-color: var(--cor4);
     margin: 0px;
     width: 100%;
-    position: fixed;
+
 }
 header {
     top: 0;
     padding: 10px 0;
+    position: fixed;
 }
 footer {
     display: flex;
