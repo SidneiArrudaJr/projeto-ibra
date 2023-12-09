@@ -22,18 +22,31 @@ body {
     justify-content: center;
     position: relative;
 }
-header {
+header , footer {
     background-color: var(--cor4);
     margin: 0px;
-    padding: 10px 0;
     width: 100%;
     position: fixed;
-    top: 0;
 }
+header {
+    top: 0;
+    padding: 10px 0;
+}
+footer {
+    display: flex;
+    bottom: 0;
+    justify-content: center;
+}
+footer > div {
+    text-align: center;
+    padding: 3px;
+    line-height: 15px;
+}
+
 #ibra {
     font-size: 1.5em;
 }
-header > div {
+header > div , footer > div{
     display: inline-flex;
 }
 header > div > picture {
@@ -53,7 +66,7 @@ header > div > section > h1 {
 nav {
     margin: auto;
 }
-nav > a {
+nav > a , footer a {
     text-decoration: none;
     color: var(--cor0);
     background-color: var(--cor4);
@@ -62,7 +75,7 @@ nav > a {
     padding: 2px;
     line-height: 1.3em;
 }
-nav > a:hover {
+nav > a:hover , footer a:hover {
     font-weight: bold;
     background-color: var(--cor3);
 }
@@ -96,14 +109,14 @@ main a {
 main a:hover {
     text-decoration: underline;
 }
-iframe {
+iframe#conteudo {
     width: 300px;
     height: 200px;
     background-color: #15403B;
 }
 
 @media screen and (max-width: 426px) {
-    iframe {
+    iframe#conteudo {
         width: 240px;
         height: 160px;
     }
@@ -113,14 +126,14 @@ iframe {
 }
 
 @media  screen and (min-width: 600px) and (max-width: 799px) {
-    iframe {
+    iframe#conteudo {
         width: 500px;
         height: 333px;
     }
 }
 
 @media  screen and (min-width: 800px) {
-    iframe {
+    iframe#conteudo {
         width: 700px;
         height: 466px;
     }
